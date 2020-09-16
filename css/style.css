@@ -1,0 +1,60 @@
+html, body{
+    background-color: rgb(180, 66, 66);
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContainer{
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+}
+
+.homeContainer{
+    background-color: rgb(70, 119, 161);
+    width: 100%;
+    height: 85%;
+}
+
+
+
+
+.menuContainer{
+    background-color: beige;
+    width: 100%;
+    height: 15%;
+}
+
+.menuFather{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuHome{
+    background-color: lightcoral;
+    width: 25%;
+    height: 100%;
+}
+
+.menuWork{
+    background-color: lightgreen;
+    width: 25%;
+    height: 100%;
+}
+
+.menuAbout{
+    background-color: lightgray;
+    width: 25%;
+    height: 100%;
+}
+
+.menuContact{
+    background-color: lightgoldenrodyellow;
+    width: 25%;
+    height: 100%;
+}
