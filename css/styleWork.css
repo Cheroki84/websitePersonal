@@ -1,0 +1,144 @@
+html, body{
+    background-color: rgb(112, 99, 83);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.mainContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+}
+
+.homeContainer{
+    background-color: bisque;
+    height: 50%;
+    width: 100%;
+}
+
+.prueba{
+    background-color: aqua;
+    height: 50%;
+    width: 100%;
+}
+
+
+/*Menú inferior*/
+.menuContainer{
+    background-color: beige;
+    width: 100%;
+    height: 7%;
+    display: flex;
+    position: fixed;
+    bottom: 0em;
+}
+
+.menuFather{
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuHome{
+    background-image: url(../../img/iconHome.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkMenu{
+    width: 60%;
+    height: 100%;
+}
+
+.menuWork{
+    background-image: url(../../img/iconWork.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuAboutMe{
+    background-image: url(../../img/iconAboutMe.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuContact{
+    background-image: url(../../img/iconContact.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Cambio de iconos a texto al llegar a 568px*/
+@media screen and (min-width: 568px){
+    .menuHome{
+        background-image: url(../../img/textHome.png);
+        background-size: 60%;
+    }
+    
+    .menuWork{
+        background-image: url(../../img/textWork.png);
+        background-size: 60%;
+    }
+    
+    .menuAboutMe{
+        background-image: url(../../img/textAboutMe.png);
+        background-size: 60%;
+    }
+    
+    .menuContact{
+        background-image: url(../../img/textContact.png);
+        background-size: 60%;
+    }
+    
+    
+    
+    }
+    
+    
+    
+    
+    
+    /*Cambio de estilo al llegar a 768px*/
+    @media screen and (min-width: 768px){
+    
+    }
+    
+    
+    
+    
+    @media screen and (min-width: 1024px){
+        
+    }
