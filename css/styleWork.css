@@ -49,7 +49,7 @@ html, body{
 }
 
 .menuHome{
-    background-image: url(../../img/iconHome.png);
+    background-image: url(../img/iconHome.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
