@@ -38,7 +38,7 @@ html, body{
 }
 
 .menuFather{
-    background-color: lightgray;
+    background-color: rgb(145, 145, 145);
     width: 100%;
     height: 100%;
     display: flex;
@@ -52,7 +52,7 @@ html, body{
     background-repeat: no-repeat;
     background-size: contain;
     width: 25%;
-    height: 90%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,6 +61,7 @@ html, body{
 .linkMenu{
     width: 60%;
     height: 100%;
+    font-size: 0;
 }
 
 .menuWork{
@@ -69,7 +70,7 @@ html, body{
     background-repeat: no-repeat;
     background-size: contain;
     width: 25%;
-    height: 90%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +82,7 @@ html, body{
     background-repeat: no-repeat;
     background-size: contain;
     width: 25%;
-    height: 90%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,10 +94,12 @@ html, body{
     background-repeat: no-repeat;
     background-size: contain;
     width: 25%;
-    height: 90%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: inset 0em 0em 1em 0em rgb(255, 255, 255);
+    border-radius: 1.5em;
 }
 
 /*Cambio de iconos a texto al llegar a 568px*/
@@ -129,10 +132,51 @@ html, body{
     
     
     
-    /*Cambio de estilo al llegar a 768px*/
-    @media screen and (min-width: 768px){
-    
-    }
+/*Cambio de estilo al llegar a 768px*/
+@media screen and (min-width: 768px){
+.menuContainer{
+    top: 0em;
+}
+       
+.linkMenu{
+    font-size: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.linkMenu:hover{
+    box-shadow:inset 0em 0em 1em 0em black;
+    transition: 1s;
+    color: aliceblue;
+}
+
+.menuHome{
+    background-image: none;    
+}
+
+.menuWork{
+    background-image: none;
+}
+
+.menuAboutMe{
+    background-image: none;
+}
+
+.menuContact{
+    background-image: none;
+    box-shadow: none;
+}
+
+.menuContact a{
+    box-shadow: inset 0em 0em 1em 0em blue;
+}
+
+
+
+}
     
     
     
