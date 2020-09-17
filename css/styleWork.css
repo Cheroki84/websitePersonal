@@ -1,13 +1,11 @@
 html, body{
-    background-color: rgb(112, 99, 83);
+    background-color: rgb(70, 119, 161);
     width: 100%;
     height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
-
 }
-
 
 .mainContainer{
     display: flex;
@@ -27,7 +25,6 @@ html, body{
     height: 50%;
     width: 100%;
 }
-
 
 /*Menú inferior*/
 .menuContainer{
@@ -58,12 +55,6 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.linkMenu{
-    width: 60%;
-    height: 100%;
-    font-size: 0;
 }
 
 .menuWork{
@@ -104,43 +95,43 @@ html, body{
     align-items: center;
 }
 
+.linkMenu{
+    width: 60%;
+    height: 100%;
+    font-size: 0;
+}
+
 /*Cambio de iconos a texto al llegar a 568px*/
 @media screen and (min-width: 568px){
-    .menuHome{
-        background-image: url(../img/textHome.png);
-        background-size: 60%;
-    }
-    
-    .menuWork{
-        background-image: url(../img/textWork.png);
-        background-size: 60%;
-    }
-    
-    .menuAboutMe{
-        background-image: url(../img/textAboutMe.png);
-        background-size: 60%;
-    }
-    
-    .menuContact{
-        background-image: url(../img/textContact.png);
-        background-size: 60%;
-    }
-    
-    
-    
+.menuHome{
+    background-image: url(../img/textHome.png);
+    background-size: 60%;
 }
     
+.menuWork{
+    background-image: url(../img/textWork.png);
+    background-size: 60%;
+}
     
+.menuAboutMe{
+    background-image: url(../img/textAboutMe.png);
+    background-size: 60%;
+}
     
-    
-    
+.menuContact{
+    background-image: url(../img/textContact.png);
+    background-size: 60%;
+}
+
+}/*Cierre del media query*/
+
 /*Cambio de estilo al llegar a 768px*/
 @media screen and (min-width: 768px){
+/*Menú pasa a la parte superior de la pantalla*/
 .menuContainer{
     top: 0em;
 }
 
-    
 .linkMenu{
     font-size: 2.5vw;
     display: flex;
@@ -177,18 +168,8 @@ html, body{
     background-image: none;
 }
 
-
-
-}
-    
-    
-    
-
-
-
-
-
-    
+}/*Cierre del media query*/
+  
 @media screen and (min-width: 1024px){
         
 }

@@ -1,12 +1,11 @@
-/*Estilo principal para el index.html*/
 html, body{
-    background-color: rgb(180, 66, 66);
+    background-color: rgb(70, 119, 161);
     margin: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
-
+/*Padre de todo el contenido de la página, a excepción del menú*/
 .mainContainer{
     background-color: aqua;
     width: 100%;
@@ -34,9 +33,6 @@ html, body{
     font-size: 1vh;/*modificar si se descuadra el tamaño del texto*/
     font-size: 3.1vmax;/*modificar si se descuadra el tamaño del texto*/
 }
-
-
-
 
 /*Menú inferior*/
 .menuContainer{
@@ -69,12 +65,6 @@ html, body{
     align-items: center;
     box-shadow: inset 0em 0em 1em 0em rgb(255, 255, 255);
     border-radius: 1.5em;
-}
-
-.linkMenu{
-    width: 60%;
-    height: 100%;
-    font-size: 0;
 }
 
 .menuWork{
@@ -113,6 +103,11 @@ html, body{
     align-items: center;
 }
 
+.linkMenu{
+    width: 60%;
+    height: 100%;
+    font-size: 0;
+}
 
 /*Cambio de iconos a texto al llegar a 568px*/
 @media screen and (min-width: 568px){
@@ -136,16 +131,11 @@ html, body{
     background-size: 60%;
 }
 
-
-
-}
-
-
-
-
+}/*Cierre del media query*/
 
 /*Cambio de estilo al llegar a 768px*/
 @media screen and (min-width: 768px){
+/*Menú pasa a la parte superior de la pantalla*/
 .menuContainer{
     top: 0em;
 }
@@ -186,12 +176,7 @@ html, body{
     background-image: none;
 }
 
-
-}
-
-
-
-
+}/*Cierre del media query*/
 
 @media screen and (min-width: 1024px){
     
