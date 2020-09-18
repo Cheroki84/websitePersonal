@@ -102,22 +102,22 @@ html, body{
 /*Cambio de iconos a texto al llegar a 568px*/
 @media screen and (min-width: 568px){
 .menuHome{
-    background-image: url(../img/textHome.png);
+    background-image: url(../img/textInicio.png);
     background-size: 60%;
 }
     
 .menuWork{
-    background-image: url(../img/textWork.png);
+    background-image: url(../img/textTrabajos.png);
     background-size: 60%;
 }
     
 .menuAboutMe{
-    background-image: url(../img/textAboutMe.png);
+    background-image: url(../img/textSobremi.png);
     background-size: 60%;
 }
     
 .menuContact{
-    background-image: url(../img/textContact.png);
+    background-image: url(../img/textContacto.png);
     background-size: 60%;
 }
   

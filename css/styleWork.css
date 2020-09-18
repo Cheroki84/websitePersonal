@@ -15,15 +15,40 @@ html, body{
 }
 
 .homeContainer{
-    background-color: bisque;
-    height: 50%;
+    background-color: rgb(70, 119, 161);
+    width: 100%;
+    display: flex;
+}
+
+.consolaSwitch{
+    background-color: rgb(142, 226, 109);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20em;
     width: 100%;
 }
 
-.prueba{
+.consolaSwitch img{
+    width: 60%;
+    border-radius: 2em;
+}
+
+.consolaSwitchEnlaces{
+    background-color: beige;
+    margin-top: 0.5em;
+    height: 2em;
+    width: 60%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.consolaSwitchEnlaces a{
     background-color: aqua;
-    height: 50%;
-    width: 100%;
+    text-decoration: none;
+    font-size: 4vw;
 }
 
 /*Menú inferior*/
@@ -104,22 +129,22 @@ html, body{
 /*Cambio de iconos a texto al llegar a 568px*/
 @media screen and (min-width: 568px){
 .menuHome{
-    background-image: url(../img/textHome.png);
+    background-image: url(../img/textInicio.png);
     background-size: 60%;
 }
     
 .menuWork{
-    background-image: url(../img/textWork.png);
+    background-image: url(../img/textTrabajos.png);
     background-size: 60%;
 }
     
 .menuAboutMe{
-    background-image: url(../img/textAboutMe.png);
+    background-image: url(../img/textSobremi.png);
     background-size: 60%;
 }
     
 .menuContact{
-    background-image: url(../img/textContact.png);
+    background-image: url(../img/textContacto.png);
     background-size: 60%;
 }
 
@@ -168,8 +193,15 @@ html, body{
     background-image: none;
 }
 
+.consolaSwitch{
+    height: 30em;
+}
+
 }/*Cierre del media query*/
   
 @media screen and (min-width: 1024px){
-        
+.consolaSwitch{
+    height: 40em;
+}
+
 }
