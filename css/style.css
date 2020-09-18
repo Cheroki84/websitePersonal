@@ -1,5 +1,5 @@
 html, body{
-    background-color: rgb(70, 119, 161);
+    background-color: rgb(43, 52, 59);
     margin: 0;
     height: 100%;
     display: flex;
@@ -15,8 +15,19 @@ html, body{
 .homeContainer{
     background-color: rgb(70, 119, 161);
     width: 100%;
-    height: 97%;
+    height: 93%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeContainerBorder{
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    border: 0.4em solid rgb(145, 145, 145);
+    border-radius: 1em;
 }
 
 .welcome{
@@ -26,12 +37,23 @@ html, body{
     flex-direction: column;
 }
 
-.welcome h1, p{
-    margin: 0;
-    padding: 1em;
-    text-align: justify;
-    font-size: 1vh;/*modificar si se descuadra el tamaño del texto*/
-    font-size: 3.1vmax;/*modificar si se descuadra el tamaño del texto*/
+.tittleH3{
+    margin: 2em;
+    padding: 0;
+    text-align: center;
+    font-size: 4vmax;/*modificar si se descuadra el tamaño del texto*/
+    font-family: Droid Serif,Georgia,serif;
+    color: white;
+    font-weight: bold;
+}
+
+.contentP{
+    margin: 2em;
+    padding: 0em;
+    text-align: center;
+    font-size: 2.6vmax;/*modificar si se descuadra el tamaño del texto*/
+    font-family: Droid Serif,Georgia,serif;
+    color: white;
 }
 
 /*Menú inferior*/
@@ -111,24 +133,33 @@ html, body{
 
 /*Cambio de iconos a texto al llegar a 568px*/
 @media screen and (min-width: 568px){
+    .tittleH3{
+    margin: 1.5em;
+}
+    
+.contentP{
+    margin: 1em 2.5em;
+    padding: 0em;
+}
+
 .menuHome{
     background-image: url(../img/textInicio.png);
-    background-size: 60%;
+    background-size: 50%;
 }
 
 .menuWork{
     background-image: url(../img/textTrabajos.png);
-    background-size: 60%;
+    background-size: 50%;
 }
 
 .menuAboutMe{
     background-image: url(../img/textSobremi.png);
-    background-size: 60%;
+    background-size: 50%;
 }
 
 .menuContact{
     background-image: url(../img/textContacto.png);
-    background-size: 60%;
+    background-size: 50%;
 }
 
 }/*Cierre del media query*/
@@ -136,23 +167,59 @@ html, body{
 /*Cambio de estilo al llegar a 768px*/
 @media screen and (min-width: 768px){
 /*Menú pasa a la parte superior de la pantalla*/
+.mainContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.tittleH3{
+    margin: 2em;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 4vmax;/*modificar si se descuadra el tamaño del texto*/
+}
+
+.contentP{
+    margin: 1em;
+    font-size: 1.8vmax;/*modificar si se descuadra el tamaño del texto*/
+    font-family: Droid Serif,Georgia,serif;
+}
+
 .menuContainer{
     top: 0em;
+    width: 100%;
+    height: 7%;
 }
+
+.homeContainer{
+    width: 100%;
+    height: 93%;
+}
+
     
 .linkMenu{
-    font-size: 2.5vw;
+    font-size: 1.8vw;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     transition: 1s;
+    color: white;
+    height: 90%;
 }
 
 .linkMenu:hover{
-    box-shadow:inset 0em 0em 1em 0em black;
+    box-shadow:inset 0em 0em 1em 0em rgb(255, 255, 255);
+    border-radius: 1.5em;
     transition: 1s;
-    color: aliceblue;
 }
 
 .menuHome{
@@ -161,7 +228,8 @@ html, body{
 }
 
 .menuHome a{
-    box-shadow: inset 0em 0em 1em 0em blue;
+    box-shadow:inset 0em 0em 1em 0em rgb(255, 255, 255);
+    border-radius: 1.5em;
 }
 
 .menuWork{

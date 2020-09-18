@@ -130,22 +130,22 @@ html, body{
 @media screen and (min-width: 568px){
 .menuHome{
     background-image: url(../img/textInicio.png);
-    background-size: 60%;
+    background-size: 50%;
 }
     
 .menuWork{
     background-image: url(../img/textTrabajos.png);
-    background-size: 60%;
+    background-size: 50%;
 }
     
 .menuAboutMe{
     background-image: url(../img/textSobremi.png);
-    background-size: 60%;
+    background-size: 50%;
 }
     
 .menuContact{
     background-image: url(../img/textContacto.png);
-    background-size: 60%;
+    background-size: 50%;
 }
 
 }/*Cierre del media query*/
@@ -158,18 +158,20 @@ html, body{
 }
 
 .linkMenu{
-    font-size: 2.5vw;
+    font-size: 1.8vw;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     transition: 1s;
+    color: white;
+    height: 90%;
 }
 
 .linkMenu:hover{
-    box-shadow:inset 0em 0em 1em 0em black;
+    box-shadow:inset 0em 0em 1em 0em rgb(255, 255, 255);
+    border-radius: 1.5em;
     transition: 1s;
-    color: aliceblue;
 }
 
 .menuHome{
@@ -182,7 +184,8 @@ html, body{
 }
 
 .menuWork a{
-    box-shadow: inset 0em 0em 1em 0em blue;
+    box-shadow:inset 0em 0em 1em 0em rgb(255, 255, 255);
+    border-radius: 1.5em;
 }
 
 .menuAboutMe{
