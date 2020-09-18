@@ -1,54 +1,68 @@
 html, body{
     background-color: rgb(70, 119, 161);
     width: 100%;
-    height: 100%;
     margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: column;
 }
 
 .mainContainer{
+    background-color: rgb(70, 119, 161);
     display: flex;
     width: 100%;
-    flex-direction: column;
-    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .homeContainer{
-    background-color: rgb(70, 119, 161);
     width: 100%;
+    height: 15em;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tittleH3{
+    margin: 1em;
+    padding: 0;
+    text-align: center;
+    font-size: 4vmax;/*modificar si se descuadra el tamaño del texto*/
+    font-family: Droid Serif,Georgia,serif;
+    color: white;
+    font-weight: bold;
+    justify-content: flex-start;
 }
 
 .consolaSwitch{
-    background-color: rgb(142, 226, 109);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 20em;
+    height: 10em;
     width: 100%;
 }
 
 .consolaSwitch img{
-    width: 60%;
+    width: 50%;
     border-radius: 2em;
 }
 
 .consolaSwitchEnlaces{
-    background-color: beige;
     margin-top: 0.5em;
     height: 2em;
-    width: 60%;
+    width: 50%;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
 }
 
 .consolaSwitchEnlaces a{
-    background-color: aqua;
+    box-shadow: inset 0em 0em 1em 0em rgb(255, 255, 255);
     text-decoration: none;
     font-size: 4vw;
+    padding: 0.5em;
+    border-radius: 1.5em;
 }
 
 /*Menú inferior*/
@@ -128,6 +142,19 @@ html, body{
 
 /*Cambio de iconos a texto al llegar a 568px*/
 @media screen and (min-width: 568px){
+.consolaSwitch img{
+    width: 35%;
+}
+
+.consolaSwitchEnlaces{
+    width: 35%;
+
+}
+
+.consolaSwitchEnlaces a{
+    font-size: 3vmax;
+}
+
 .menuHome{
     background-image: url(../img/textInicio.png);
     background-size: 50%;
@@ -152,9 +179,21 @@ html, body{
 
 /*Cambio de estilo al llegar a 768px*/
 @media screen and (min-width: 768px){
+.homeContainer{
+    margin-top: 6em;
+}
+
+.tittleH3{
+    font-size: 4vmax;
+}
+
 /*Menú pasa a la parte superior de la pantalla*/
 .menuContainer{
     top: 0em;
+}
+
+.menuFather{
+    background-color: rgb(70, 119, 161);
 }
 
 .linkMenu{
