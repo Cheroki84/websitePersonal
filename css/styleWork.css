@@ -1,5 +1,5 @@
 html, body{
-    background-color: rgb(70, 119, 161);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@ html, body{
 }
 
 .mainContainer{
-    background-color: rgb(70, 119, 161);
+    background-color: rgb(255, 255, 255);
     display: flex;
     width: 100%;
     justify-content: center;
@@ -24,12 +24,12 @@ html, body{
 }
 
 .tittleH3{
-    margin: 1em;
+    margin-top: 3em;
     padding: 0;
     text-align: center;
     font-size: 4vmax;/*modificar si se descuadra el tamaño del texto*/
     font-family: Droid Serif,Georgia,serif;
-    color: white;
+    color: rgb(70, 119, 161);
     font-weight: bold;
     justify-content: flex-start;
 }
@@ -41,6 +41,11 @@ html, body{
     flex-direction: column;
     height: 10em;
     width: 100%;
+}
+
+.tittleH4{
+    color: rgb(70, 119, 161);
+    font-size: 2.6vmax;
 }
 
 .consolaSwitch img{
@@ -58,16 +63,17 @@ html, body{
 }
 
 .consolaSwitchEnlaces a{
-    box-shadow: inset 0em 0em 1em 0em rgb(255, 255, 255);
+    box-shadow: inset 0em 0em 1em 0em rgb(70, 119, 161);
     text-decoration: none;
     font-size: 4vw;
     padding: 0.5em;
     border-radius: 1.5em;
+    color: rgb(70, 119, 161);
 }
 
 /*Menú inferior*/
 .menuContainer{
-    background-color: beige;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 7%;
     display: flex;
@@ -187,13 +193,19 @@ html, body{
     font-size: 4vmax;
 }
 
+.consolaSwitchEnlaces a{
+    box-shadow: none;
+    text-decoration: underline;
+    font-size: 1.8vw;
+}
+
 /*Menú pasa a la parte superior de la pantalla*/
 .menuContainer{
     top: 0em;
 }
 
 .menuFather{
-    background-color: rgb(70, 119, 161);
+    background-color: rgb(255, 255, 255);
 }
 
 .linkMenu{
@@ -203,12 +215,12 @@ html, body{
     align-items: center;
     text-decoration: none;
     transition: 1s;
-    color: white;
+    color: rgb(70, 119, 161);
     height: 90%;
 }
 
 .linkMenu:hover{
-    box-shadow:inset 0em 0em 1em 0em rgb(255, 255, 255);
+    box-shadow:inset 0em 0em 1em 0em rgb(70, 119, 161);
     border-radius: 1.5em;
     transition: 1s;
 }
@@ -223,8 +235,7 @@ html, body{
 }
 
 .menuWork a{
-    box-shadow:inset 0em 0em 1em 0em rgb(255, 255, 255);
-    border-radius: 1.5em;
+    text-decoration: underline;
 }
 
 .menuAboutMe{
