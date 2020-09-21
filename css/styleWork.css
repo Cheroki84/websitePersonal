@@ -186,7 +186,7 @@ html, body{
 /*Cambio de estilo al llegar a 768px*/
 @media screen and (min-width: 768px){
 .homeContainer{
-    margin-top: 6em;
+    margin-top: 9em;
 }
 
 .tittleH3{
